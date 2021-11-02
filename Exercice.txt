@@ -1,0 +1,26 @@
+
+1 - Créer un modèle Animal avec les caractéristiques suivantes :
+    Numéro d'ordre (unique), 
+    Espèce, 
+    Couleur, 
+    Vitesse maximum, 
+    Age (1 par défaut)
+
+2 - Créer une liste des espèces possibles
+    Lapin, Chat, Mésange, Python, Chien, Tourterelle, Coccinelle, Abeille
+
+3 - Créer une liste de couleurs possibles
+    Blanc, Vert, Bleu, Rouge, Jaune
+
+4 - Créer une méthode d'instance pour faire naitre un animal (le constructeur)
+
+5 - Créer une méthode de classe permettant d'afficher la liste des animaux sous la forme
+    Les ... animaux de la liste
+    {Espèce} {Numéro d'ordre} {Couleur} a {Age} an(s)
+
+6 - Demander à l'utilisateur combien d'animaux il souhaite faire naitre
+
+7 - Faire naitre autant d'animaux que nécessaire
+    avec pour chacun une espèce et une couleur aléatoires
+
+8 - Afficher la liste des animaux
