@@ -8,7 +8,7 @@
         - gérer pour chacun la distance parcourue et l'ordre d'arrivée
         - créer une méthode permettant de les faire avancer
 
-4 - A chaque étape de la course, afficher la liste des animaux (et s'il est arrivé)
+4 - A chaque étape de la course, afficher la liste des animaux (et s'il est arrivé) sous la forme :
     {Nom}, le {Espèce} {Couleur}, a parcouru {Distance}km (et est arrivé en position {Position})
 
 5 - A la fin de la course 

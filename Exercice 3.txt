@@ -6,7 +6,7 @@
 
 2 - Charger le fichier json dans un dictionnaire
 
-3 - Lors de la demande du nombre d'animaux à naitre (entre 2 et 10),
+3 - Lors de la demande du nombre d'animaux à faire naitre (entre 2 et 10),
     Définir sa Vmax, sa couleur et son nom (doit être unique)
     selon les données du dictionnaire
 
