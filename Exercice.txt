@@ -6,13 +6,14 @@
     Vitesse maximum, 
     Age (1 par défaut)
 
-2 - Créer une liste des espèces possibles
+2 - Créer une méthode d'instance pour faire naitre un animal (le constructeur)
+
+3 - Créer une liste des espèces possibles
     Lapin, Chat, Mésange, Python, Chien, Tourterelle, Coccinelle, Abeille
 
-3 - Créer une liste de couleurs possibles
+4 - Créer une liste de couleurs possibles
     Blanc, Vert, Bleu, Rouge, Jaune
 
-4 - Créer une méthode d'instance pour faire naitre un animal (le constructeur)
 
 5 - Créer une méthode de classe permettant d'afficher la liste des animaux sous la forme
     Les ... animaux de la liste
