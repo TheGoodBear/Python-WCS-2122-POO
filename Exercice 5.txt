@@ -1,0 +1,2 @@
+Représenter la course graphiquement
+et avec une interface (titre, dialogues, etc.) conviviale

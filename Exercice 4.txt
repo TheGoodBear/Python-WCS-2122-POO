@@ -1,0 +1,20 @@
+1 - Créer une course pour les animaux
+
+2 - Demander quelle est la distance de la course
+    (entre 100 et 1000km)
+
+3 - Faire courrir les animaux (chaque tour dure une heure)
+    Il faut bien entendu :
+        - gérer pour chacun la distance parcourue et l'ordre d'arrivée
+        - créer une méthode permettant de les faire avancer
+
+4 - A chaque étape de la course, afficher la liste des animaux (et s'il est arrivé)
+    {Nom}, le {Espèce} {Couleur}, a parcouru {Distance}km (et est arrivé en position {Position})
+
+5 - A la fin de la course 
+    (lorsque tous les animaux ont franchi la ligne d'arrivée)
+    Afficher le résultat sous la forme :
+    La course a durée {heures} heures, le podium est :
+    {Position} - {Nom}, le {Espèce} {Couleur}, arrivé en {Heures} heures
+
+    La liste doit être triée par ordre d'arrivée

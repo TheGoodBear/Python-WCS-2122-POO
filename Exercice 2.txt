@@ -1,0 +1,12 @@
+1 - Faire une méthode d'instance pour faire vieillir un animal de x années
+
+2 - Demander à l'utilisateur 
+    - de quelle espèce et/ou de quelle couleur
+        il souhaite faire vieillir (parmi les espèces et couleurs possibles) les animaux
+    - de combien d'années
+
+3 - Faire vieillir tous les animaux sélectionnés 
+
+4 - Afficher la liste des animaux
+
+5 - Recommencer à 2 tant que l'utilisateur rentre un nombre d'années > 0

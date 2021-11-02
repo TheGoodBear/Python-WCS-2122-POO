@@ -1,0 +1,13 @@
+1 - Pour chaque espèce d'animal, 
+    définir ses caractéristiques possibles dans un fichier json
+    - vitesse max (entre x et y), par exemple lapin peut aller de 20 à 40km/h
+    - ses couleurs possibles
+    - ses noms possibles (par exemple Panpan, Rabit, Roger, Lapinet, Peluche pour un lapin)
+
+2 - Charger le fichier json dans un dictionnaire
+
+3 - Lors de la demande du nombre d'animaux à naitre (entre 2 et 10),
+    Définir sa Vmax, sa couleur et son nom (doit être unique)
+    selon les données du dictionnaire
+
+4 - Afficher la liste des animaux
