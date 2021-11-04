@@ -4,7 +4,6 @@
 from Poterie import Poterie
 import GestionStock
 
-
 def Main():
     """
     """
