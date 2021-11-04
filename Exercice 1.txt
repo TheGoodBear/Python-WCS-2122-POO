@@ -1,6 +1,6 @@
 a - Dans un fichier Animal.py
 
-    1 - Créer un modèle Animal avec les caractéristiques suivantes :
+    1 - Créer un modèle Animal
 
     2 - Créer une propriété de classe (List) permettant de stocker la liste des animaux
 

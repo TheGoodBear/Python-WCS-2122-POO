@@ -9,4 +9,4 @@
 
 4 - Afficher la liste des animaux
 
-5 - Recommencer à 2 tant que l'utilisateur rentre un nombre d'années > 0
+5 - Recommencer au point 2 tant que l'utilisateur rentre un nombre d'années > 0
