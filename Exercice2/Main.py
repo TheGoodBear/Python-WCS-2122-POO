@@ -2,6 +2,7 @@
 
 # imports
 import random
+import time
 from Animal import Animal
 
 # functions
@@ -70,16 +71,39 @@ def FaireViellir():
                     Color = input("De quelle couleur : ")
 
                 # méthode basique
+                Start1 = time.time()
                 for MyAnimal in Animal.List:
                     if ((Specie == "" or MyAnimal.Species == Specie)
                         and (Color == "" or MyAnimal.Color == Color)):
                         MyAnimal.Vieillir(NbYears)
+                Duration1 = time.time() - Start1
+                print(f"Durée Boucle For : {round(Duration1, 4)}")
 
-                # méthode avec filter                                
-                AnimalsToGrowOlder = 
+                # méthode avec filter    
+                # Start2 = time.time()                                           
+                # AnimalsToGrowOlder = list(
+                #     filter(
+                #         lambda AnimalIterated:
+                #         (AnimalIterated.Species.lower() == Specie.lower() or Specie =="")
+                #         and 
+                #         (AnimalIterated.Color.lower() == Color.lower() or Color==""),
+                #         Animal.List
+                #         )
+                #     )
+                # for AnimalIterated in AnimalsToGrowOlder:
+                #     AnimalIterated.Vieillir(NbYears)
+                # Duration2 = time.time() - Start2
+                # print(f"Durée Filter : {round(Duration2, 4)}")
+                
+                # méthode avec compréhension de liste   
+                # Start3 = time.time()                                             
+                # [TheAnimal.Vieillir(NbYears) for TheAnimal in Animal.List if (
+                #     (Specie == "" or TheAnimal.Species == Specie) and 
+                #     (Color == "" or TheAnimal.Color == Color)
+                #     )]
+                # Duration3 = time.time() - Start3                
+                # print(f"Durée Compréhension : {round(Duration3, 4)}")
 
-                # méthode avec compréhension de liste                                
-                AnimalsToGrowOlder = 
 
     except ValueError:
         pass
