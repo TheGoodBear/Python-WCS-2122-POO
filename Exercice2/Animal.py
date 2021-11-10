@@ -5,6 +5,7 @@
 # model
 class Animal():
     """
+        Model for animal
     """
 
     # class properties
@@ -56,12 +57,15 @@ class Animal():
         print(f"{self.Species} {self.Color} est maintenant à l'arrêt")
 
 
-    def Vieillir(self, NbYears : int=1):
+    def Vieillir(self, NbYears: int = 1):
         """
             Fait vieillir un animal de x années
+
+            Args:
+                NbYears (int, optional): nombre d'années. Defaults to 1.
+
             (instance method)
         """
-
         self.Age += NbYears
         print(f"{self.Species} {self.Color} a maintenant {self.Age} années")
 
