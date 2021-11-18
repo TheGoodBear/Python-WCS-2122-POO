@@ -3,7 +3,9 @@
 # imports
 import random
 import time
+
 from Animal import Animal
+
 
 # functions
 def Main():
