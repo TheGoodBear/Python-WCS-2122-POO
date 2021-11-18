@@ -13,11 +13,11 @@ def Main() -> None:
 
     print("Animaux du monde\n")
 
-    # Exercice 1
+    # Exercice 1 + 3
     FaireNaitre()
 
     # Exercice 2
-    FaireViellir()
+    # FaireViellir()
 
     # end
     print("\nAu revoir")
@@ -28,26 +28,35 @@ def FaireNaitre() -> None:
         Demander à l'utilisateur 
         combien d'animaux doivent naitre    
     """
-    AnimalsData = openFile('./Exercice 3/data')
+    
+    # get animal data from file
+    AnimalsData = ReadFromFile('./Exercice 3/data')
 
     # get number of animals to create
     NumberOfAnimals = 0
 
+    # Repeat while the input is not a number
+    # or is not between 2 and 10
     while NumberOfAnimals < 2 or NumberOfAnimals > 10:
         try:
             NumberOfAnimals = int(input("Combien d'animaux dois-je faire naitre ? (entre 2 - 10) : "))
         except ValueError:
             print("Il faut saisir un nombre entre 2 et 10")
 
+    # Get all the keys from the AnimalsData dict
     Species = list(AnimalsData)
     
     # create appropriate number of animals
     for Number in range(NumberOfAnimals):
-        SelectedSpecie = random.choice(Species)
+        # get a random species
+        SelectedSpecies = random.choice(Species)
+        
+        # get a random name from possible names in selected species
+        # and be sure name is not already taken
         SelectedName = [
             Name 
             for Name 
-            in AnimalsData[SelectedSpecie]["names"] 
+            in AnimalsData[SelectedSpecies]["names"] 
             if not Name in 
                 [
                     AnimalName.Name
@@ -56,30 +65,37 @@ def FaireNaitre() -> None:
                 ]
             ]
 
+        # create a new animal with random properties
         Animal(
-            SelectedSpecie,
-            random.choice(AnimalsData[SelectedSpecie]["colors"]),
+            SelectedSpecies,
+            random.choice(AnimalsData[SelectedSpecies]["colors"]),
             random.choice(SelectedName),
-            AnimalsData[SelectedSpecie]["gender"],
+            AnimalsData[SelectedSpecies]["gender"],
             random.randint(
-                AnimalsData[SelectedSpecie]["minSpeed"], 
-                AnimalsData[SelectedSpecie]["maxSpeed"])
+                AnimalsData[SelectedSpecies]["minSpeed"], 
+                AnimalsData[SelectedSpecies]["maxSpeed"])
             )
 
+    # print list, sorted or not
+    SortBy = None
+    PossibleFields = ["Name", "Species", "Color", "MaxSpeed"]
+
+    # Ask to the player if he want to sort the output
+    while SortBy not in PossibleFields and SortBy != '':
+        print("Par quoi veux-tu trier la liste (vide pour ne pas trier): ")
+        print(", ".join(PossibleFields))
+        SortBy = input("")
+
     # print list
-    ToSort = ''
+    Animal.Print(SortBy)
 
-    while ToSort not in ('y', 'n'):
-        ToSort = input("Veux tu afficher les animaux triés par expèces (y,n): ").lower()
 
+def ReadFromFile(name: str) -> dict[dict]:
+    """
+        Returns a dict of dict containing data for each animal
+        loaded from a json file
+    """
     
-    Animal.Print(ToSort)
-
-
-def openFile(name: str) -> dict[dict]:
-    """
-    Functions wich retrurns a dict of dict containing data for each animal
-    """
     try:
         with open(f"{name}.json", encoding="utf-8") as file:
             AnimalsData = json.load(file)
@@ -116,13 +132,13 @@ def FaireViellir() -> None:
                     Color = input("De quelle couleur : ")
 
                 # méthode basique
-                Start1 = time.time()
+                # Start1 = time.time()
                 for MyAnimal in Animal.List:
                     if ((Specie == "" or MyAnimal.Species == Specie)
                         and (Color == "" or MyAnimal.Color == Color)):
                         MyAnimal.Vieillir(NbYears)
-                Duration1 = time.time() - Start1
-                print(f"Durée Boucle For : {round(Duration1, 4)}")
+                # Duration1 = time.time() - Start1
+                # print(f"Durée Boucle For : {round(Duration1, 4)}")
 
                 # méthode avec filter    
                 # Start2 = time.time()                                           

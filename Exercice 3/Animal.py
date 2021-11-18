@@ -83,17 +83,17 @@ class Animal():
 
 
     @classmethod
-    def Print(cls, ToSort) -> None:
+    def Print(cls, SortBy) -> None:
         """
             Prints all animals in list
             (class method)
         """
-        if ToSort == 'y':
+        if SortBy != '':
             cls.List.sort(
-                key=lambda CurrentAnimal: CurrentAnimal.Species
+                key=lambda CurrentAnimal: eval(f"CurrentAnimal.{SortBy}")
                 )
 
-        print(f"\nListe des {len(cls.List)} animaux")
+        print(f"\nListe des {len(cls.List)} animaux {f'trié par {SortBy}' if SortBy != '' else ''}")
         for MyAnimal in cls.List:
             print(MyAnimal)
             # print(f"{MyAnimal.Species} {MyAnimal.OrderNumber} {MyAnimal.Color.lower()} a {MyAnimal.Age} an(s) et se déplace à {MyAnimal.MaxSpeed}km/h")
