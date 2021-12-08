@@ -1,0 +1,105 @@
+{
+    "lapin": {
+        "colors": ["gris", "marron", "blanc", "noir"],
+        "minSpeed": 30,
+        "maxSpeed": 40,
+        "names": ["Panpan", "Rabit", "Roger", "Lapinet", "Peluche"],
+        "gender": "m"
+    },
+    "chat": {
+        "colors": ["blanc", "gris", "noir", "roux", "bleu", "marron"],
+        "minSpeed": 15,
+        "maxSpeed": 48,
+        "names": ["Nala", "Minette", "Mimi", "Tigrou", "Simba", "Gribouille", "Plume", "Chipie"],
+        "gender": "m"
+    },
+    "mésange": {
+        "colors": ["jaune et bleue", "jaune et noir"],
+        "minSpeed": 50,
+        "maxSpeed": 60,
+        "names": ["Sweetie", "Baby", "Sunshine", "Patience", "Blueberry", "Booboo", "Coco", "Penny"],
+        "gender": "f"
+    },
+    "python": {
+        "colors": ["marron", "blanc et jaune", "blanc et orange", "orange et noir"],
+        "minSpeed": 2,
+        "maxSpeed": 10,
+        "names": [
+            "Asmodée",
+            "Basilic",
+            "Jafaar",
+            "Jormungand",
+            "Kaa",
+            "Méduse",
+            "Nagini",
+            "arc en ciel"
+        ],
+        "gender": "m"
+    },
+    "chien": {
+        "colors": ["blanc", "gris", "noir", "roux", "bleu", "marron"],
+        "minSpeed": 20,
+        "maxSpeed": 40,
+        "names": [
+            "Snoopy",
+            "Sam",
+            "Aaron",
+            "Ulysse",
+            "Romeo",
+            "Abysse",
+            "Ange",
+            "Aïcha",
+            "Acha",
+            "Prisca",
+            "Benfica",
+            "Apolon",
+            "Achille",
+            "Baïka",
+            "Noisette"
+        ],
+        "gender": "m"
+    },
+    "tourterelle": {
+        "colors": ["blanche", "grise"],
+        "minSpeed": 40,
+        "maxSpeed": 60,
+        "names": ["Sweetie", "Baby", "Sunshine", "Patience", "Blueberry", "Booboo", "Coco", "Penny"],
+        "gender": "f"
+    },
+    "coccinelle": {
+        "colors": ["rouge à point noir", "noir à point rouge", "jaune à point noir"],
+        "minSpeed": 1,
+        "maxSpeed": 6,
+        "names": [
+            "Scooter",
+            "Midnight",
+            "Psyche",
+            "Buddy",
+            "Wolfgang",
+            "Sox",
+            "Darcy",
+            "Chuck",
+            "Stitches",
+            "Jaffa"
+        ],
+        "gender": "f"
+    },
+    "abeille": {
+        "colors": ["jaune et noir"],
+        "minSpeed": 25,
+        "maxSpeed": 32,
+        "names": [
+            "Symore",
+            "Noodles",
+            "Biggelsworth",
+            "Rambo",
+            "Aragog",
+            "Salt",
+            "Boomer",
+            "Biggelsworth",
+            "Patches",
+            "Bilbo"
+        ],
+        "gender": "f"
+    }
+}
